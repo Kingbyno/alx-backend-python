@@ -8,5 +8,5 @@ async def comprehension() -> List[float]:
     async_comprehension - function that takes no arguments
     Return: 10 random numbers
     """
-     random_numbers = [number async for number in async_generator()]
-    return random_numbers
+     random_numbers = [i async for i in async_generator()]
+     return random_numbers
