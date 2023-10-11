@@ -6,5 +6,5 @@ from typing import Generator
 async def async_generator() -> Generator[float, None, None]:
     for _ in range(10):
         await asyncio.sleep(1)
-        yield ramdom.randint(0, 10)
+        yield ramdom.uniform(0, 10)
 
